@@ -1,0 +1,6 @@
+D:\Projects\CryptoTransChatBot\CryptoTransChatBot\bin\CryptoTransChatBot.dll.config
+D:\Projects\CryptoTransChatBot\CryptoTransChatBot\bin\CryptoTransChatBot.dll
+D:\Projects\CryptoTransChatBot\CryptoTransChatBot\bin\CryptoTransChatBot.pdb
+D:\Projects\CryptoTransChatBot\CryptoTransChatBot\obj\Release\CryptoTransChatBot.csprojResolveAssemblyReference.cache
+D:\Projects\CryptoTransChatBot\CryptoTransChatBot\obj\Release\CryptoTransChatBot.dll
+D:\Projects\CryptoTransChatBot\CryptoTransChatBot\obj\Release\CryptoTransChatBot.pdb

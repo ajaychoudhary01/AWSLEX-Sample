@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Projects\chatbot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/CryptoTransChatBot.dll">
+      <publishTime>02/25/2018 15:32:09</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/24/2018 20:58:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/24/2018 20:58:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/24/2018 20:58:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>02/24/2018 20:58:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>02/24/2018 20:58:06</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>02/24/2018 20:58:06</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/24/2018 20:55:47</publishTime>
+    </File>
+    <File Include="Index.html">
+      <publishTime>02/25/2018 15:27:11</publishTime>
+    </File>
+    <File Include="Resources/chatbot.png">
+      <publishTime>02/25/2018 14:44:08</publishTime>
+    </File>
+    <File Include="Resources/favicon-16x16.png">
+      <publishTime>02/25/2018 13:55:13</publishTime>
+    </File>
+    <File Include="Resources/favicon-32x32.png">
+      <publishTime>02/25/2018 13:55:13</publishTime>
+    </File>
+    <File Include="Resources/style.css">
+      <publishTime>02/25/2018 13:55:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.js">
+      <publishTime>02/25/2018 13:51:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.js">
+      <publishTime>02/25/2018 13:51:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.map">
+      <publishTime>02/25/2018 13:51:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.js">
+      <publishTime>02/25/2018 13:51:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.js">
+      <publishTime>02/25/2018 13:51:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.map">
+      <publishTime>02/25/2018 13:51:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>02/25/2018 13:50:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>02/25/2018 13:50:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>02/25/2018 13:50:26</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>02/25/2018 13:50:26</publishTime>
+    </File>
+    <File Include="Scripts/SDK/dist/aws-lex-audio.js">
+      <publishTime>02/25/2018 14:30:57</publishTime>
+    </File>
+    <File Include="Scripts/SDK/dist/aws-lex-audio.min.js">
+      <publishTime>02/25/2018 14:31:18</publishTime>
+    </File>
+    <File Include="Scripts/SDK/lib/control.js">
+      <publishTime>02/25/2018 13:52:38</publishTime>
+    </File>
+    <File Include="Scripts/SDK/lib/conversation.js">
+      <publishTime>02/25/2018 14:31:24</publishTime>
+    </File>
+    <File Include="Scripts/SDK/lib/lex-audio.js">
+      <publishTime>02/25/2018 13:52:38</publishTime>
+    </File>
+    <File Include="Scripts/SDK/lib/recorder.js">
+      <publishTime>02/25/2018 13:52:38</publishTime>
+    </File>
+    <File Include="Scripts/SDK/lib/worker.js">
+      <publishTime>02/25/2018 13:52:38</publishTime>
+    </File>
+    <File Include="Scripts/SDK/renderer.js">
+      <publishTime>02/25/2018 13:54:16</publishTime>
+    </File>
+    <File Include="Views/ChatBot/Index.cshtml">
+      <publishTime>02/25/2018 14:38:35</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>02/25/2018 14:21:28</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>02/24/2018 20:55:47</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>02/25/2018 13:50:29</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/25/2018 15:32:09</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

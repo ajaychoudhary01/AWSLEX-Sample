@@ -1,0 +1,178 @@
+{
+  "metadata": {
+    "schemaVersion": "1.0",
+    "importType": "LEX",
+    "importFormat": "JSON"
+  },
+  "resource": {
+    "name": "CryptoTransferChatBot",
+    "version": "1",
+    "intents": [
+      {
+        "name": "crptotransfer",
+        "version": "22",
+        "fulfillmentActivity": {
+          "type": "CodeHook",
+          "codeHook": {
+            "uri": "arn:aws:lambda:eu-west-1:091721765529:function:cryptotransfunction",
+            "messageVersion": "1.0"
+          }
+        },
+        "sampleUtterances": [
+          "I want to {transactionType} {currency} to my friend",
+          "I want to {transactionType} {currency}"
+        ],
+        "slots": [
+          {
+            "name": "amount",
+            "slotConstraint": "Required",
+            "slotType": "AMAZON.NUMBER",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "How many {currency} you want to {transactionType}?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 6,
+            "sampleUtterances": []
+          },
+          {
+            "name": "currency",
+            "slotConstraint": "Required",
+            "slotType": "currencyName",
+            "slotTypeVersion": "1",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "Which currency you want to send or request?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 1,
+            "sampleUtterances": []
+          },
+          {
+            "name": "receiver",
+            "slotConstraint": "Required",
+            "slotType": "AMAZON.PostalAddress",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "What is receiver {currency} email address? "
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 4,
+            "sampleUtterances": []
+          },
+          {
+            "name": "send",
+            "slotConstraint": "Required",
+            "slotType": "AMAZON.PostalAddress",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "What is sender {currency} email address?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 5,
+            "sampleUtterances": []
+          },
+          {
+            "name": "transactionType",
+            "slotConstraint": "Required",
+            "slotType": "transactionType",
+            "slotTypeVersion": "1",
+            "valueElicitationPrompt": {
+              "messages": [
+                {
+                  "contentType": "PlainText",
+                  "content": "I just want to confirm, Do you want to send or request {currency}?"
+                }
+              ],
+              "maxAttempts": 2
+            },
+            "priority": 2,
+            "sampleUtterances": []
+          }
+        ],
+        "dialogCodeHook": {
+          "uri": "arn:aws:lambda:eu-west-1:091721765529:function:cryptotransfunction",
+          "messageVersion": "1.0"
+        }
+      }
+    ],
+    "slotTypes": [
+      {
+        "name": "transactionType",
+        "version": "1",
+        "enumerationValues": [
+          {
+            "value": "request",
+            "synonyms": []
+          },
+          {
+            "value": "send",
+            "synonyms": []
+          }
+        ],
+        "valueSelectionStrategy": "ORIGINAL_VALUE"
+      },
+      {
+        "description": "Available currencies",
+        "name": "currencyName",
+        "version": "1",
+        "enumerationValues": [
+          {
+            "value": "Ether",
+            "synonyms": []
+          },
+          {
+            "value": "Bitcoin",
+            "synonyms": []
+          },
+          {
+            "value": "Litecoin",
+            "synonyms": []
+          },
+          {
+            "value": "Ripple",
+            "synonyms": []
+          }
+        ],
+        "valueSelectionStrategy": "ORIGINAL_VALUE"
+      }
+    ],
+    "voiceId": "Joanna",
+    "childDirected": false,
+    "locale": "en-US",
+    "idleSessionTTLInSeconds": 600,
+    "clarificationPrompt": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "Sorry, can you please repeat that?"
+        }
+      ],
+      "maxAttempts": 5
+    },
+    "abortStatement": {
+      "messages": [
+        {
+          "contentType": "PlainText",
+          "content": "Sorry, I could not understand. Goodbye."
+        }
+      ]
+    }
+  }
+}

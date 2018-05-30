@@ -1,0 +1,11 @@
+D:\Projects\CryptoTransChatBot\CryptoTransChatBot\bin\CryptoTransChatBot.dll
+D:\Projects\CryptoTransChatBot\CryptoTransChatBot\bin\CryptoTransChatBot.pdb
+D:\Projects\CryptoTransChatBot\CryptoTransChatBot\obj\Debug\CryptoTransChatBot.dll
+D:\Projects\CryptoTransChatBot\CryptoTransChatBot\obj\Debug\CryptoTransChatBot.pdb
+D:\Projects\CryptoTransChatBot\CryptoTransChatBot\bin\CryptoTransChatBot.dll.config
+D:\GIT\AWSLEX-Sample\AjayChoudhary-CryptoTransfer-ChatBot-V2\Code\CryptoTransChatBot\CryptoTransChatBot\bin\CryptoTransChatBot.dll.config
+D:\GIT\AWSLEX-Sample\AjayChoudhary-CryptoTransfer-ChatBot-V2\Code\CryptoTransChatBot\CryptoTransChatBot\bin\CryptoTransChatBot.dll
+D:\GIT\AWSLEX-Sample\AjayChoudhary-CryptoTransfer-ChatBot-V2\Code\CryptoTransChatBot\CryptoTransChatBot\bin\CryptoTransChatBot.pdb
+D:\GIT\AWSLEX-Sample\AjayChoudhary-CryptoTransfer-ChatBot-V2\Code\CryptoTransChatBot\CryptoTransChatBot\obj\Debug\CryptoTransChatBot.csprojResolveAssemblyReference.cache
+D:\GIT\AWSLEX-Sample\AjayChoudhary-CryptoTransfer-ChatBot-V2\Code\CryptoTransChatBot\CryptoTransChatBot\obj\Debug\CryptoTransChatBot.dll
+D:\GIT\AWSLEX-Sample\AjayChoudhary-CryptoTransfer-ChatBot-V2\Code\CryptoTransChatBot\CryptoTransChatBot\obj\Debug\CryptoTransChatBot.pdb

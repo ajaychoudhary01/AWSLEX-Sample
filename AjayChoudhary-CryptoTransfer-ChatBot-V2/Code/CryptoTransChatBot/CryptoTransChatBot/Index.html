@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CryptoTransfer Chat Bot</title>
+    <meta name="author" content="lafranch">
+    <meta name="description" content="CryptoTransfer Chat Bot from the browser.">
+    <link rel="icon" type="image/png" href="/Resources/favicon-32x32.png" />
+    <link rel="icon" type="image/png" href="/Resources/favicon-16x16.png" sizes="16x16" />
+    <link href="/Resources/style.css" rel="stylesheet" />
+</head>
+<body class="wrapper">
+    <div class="audio-control">
+        <p id="audio-control" class="white-circle">
+            <img src="/Resources/chatbot.png">
+            <canvas class="visualizer"></canvas>
+        </p>
+        <p><span id="message"></span></p>
+    </div>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.48.0.min.js"></script>
+    <script src="/Scripts/SDK/dist/aws-lex-audio.min.js"></script>
+    <script src="/Scripts/SDK/renderer.js"></script>
+    <script type="text/javascript">
+        var waveform = window.Waveform();
+        var message = document.getElementById('message');
+        var config, conversation;
+        message.textContent = 'Say';
+
+        document.getElementById('audio-control').onclick = function () {
+
+            AWS.config.credentials = new AWS.Credentials('AKIAIHJRLYX4XHHNEXVQ', 'CPS33nL3BgnEHKvERxxpOw9pVJlG26XYgak8fYVh', null);
+            AWS.config.region = 'eu-west-1';
+
+            config = {
+                lexConfig: { botName: 'CryptoTransferChatBot' }
+            };
+
+            conversation = new LexAudio.conversation(config, function (state) {
+                message.textContent = state + '...';
+                if (state === 'Listening') {
+                    waveform.prepCanvas();
+                }
+                if (state === 'Sending') {
+                    waveform.clearCanvas();
+                }
+            }, function (data) {
+                console.log('Transcript: ', data.inputTranscript, ", Response: ", data.message);
+            }, function (error) {
+                message.textContent = error;
+            }, function (timeDomain, bufferLength) {
+                waveform.visualizeAudioBuffer(timeDomain, bufferLength);
+            });
+            conversation.advanceConversation();
+        };
+
+    </script>
+</body>
+</html>
